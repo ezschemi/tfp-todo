@@ -14,20 +14,6 @@
 
 <script>
     $(function() {
-        $('#new-form').submit(function(e) {
-            e.preventDefault();
-
-            var text = $('.new-todo').val();
-
-            var payload = {
-                task: {
-                    title: text
-                }
-            };
-            $.post("/tasks", payload).success(function(data) {
-                console.log('successful post request');
-            });
-        });
         // takes a JS-representation of a task and generates HTML with li-tags for it
         function createTaskHTML(task) {
             var isChecked = task.done ? "checked" : "";
@@ -54,7 +40,6 @@
             });
         }
 
-
         $.get("/tasks").success( function( data ) {
             var htmlString = "";
 
@@ -66,6 +51,26 @@
             ulTodos.html(htmlString);
 
             $('.toggle').change(toggleTask);
+        });
+
+        $('#new-form').submit(function(e) {
+            e.preventDefault();
+
+            var text = $('.new-todo').val();
+
+            var payload = {
+                task: {
+                    title: text
+                }
+            };
+            $.post("/tasks", payload).success(function(data) {
+                var htmlString = createTaskHTML(data);
+
+                var ulTodos = $('.todo-list');
+                ulTodos.append(htmlString);
+
+                $('.toggle').click(toggleTask);
+            });
         });
     });
 </script>
