@@ -18,7 +18,15 @@
             e.preventDefault();
 
             var text = $('.new-todo').val();
-            console.log(text);
+
+            var payload = {
+                task: {
+                    title: text
+                }
+            };
+            $.post("/tasks", payload).success(function(data) {
+                console.log('successful post request');
+            });
         });
         // takes a JS-representation of a task and generates HTML with li-tags for it
         function createTaskHTML(task) {
