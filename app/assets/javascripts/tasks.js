@@ -2,11 +2,12 @@ $(function() {
     // takes a JS-representation of a task and generates HTML with li-tags for it
     function createTaskHTML(task) {
         var isChecked = task.done ? "checked" : "";
-        var liElement = '<li><div class="view"><input class="toggle" type="checkbox"' +
-                                ' data-id="' + task.id + '" '+
-                                isChecked + '><label>' +
-                                task.title +
-                                '</label></div></li>';
+        var liClass       = task.done ? "completed" : "";
+        var liElement   = '<li id="listitem-' + task.id + '" class="' + liClass + '"><div class="view"><input class="toggle" type="checkbox"' +
+                                  ' data-id="' + task.id + '" '+
+                                  isChecked + '><label>' +
+                                  task.title +
+                                  '</label></div></li>';
 
         return liElement;
     }
@@ -22,6 +23,12 @@ $(function() {
             task: {
                 done: isItemDone
             }
+        }).success(function(data) {
+            var liHtml = createTaskHTML(data);
+            var $li = $("#listitem-" + data.id);
+            $li.replaceWith(liHtml);
+
+            $('.toggle').change(toggleTask);
         });
     }
 
@@ -55,6 +62,8 @@ $(function() {
             ulTodos.append(htmlString);
 
             $('.toggle').click(toggleTask);
+
+            $('.new-todo').val('');
         });
     });
 });
