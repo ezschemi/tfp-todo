@@ -1,0 +1,14 @@
+{
+    "rubocop_config_file": ".rubocop.yml",
+    "settings":
+    {
+        "tab_size": 4
+    },
+    "folders":
+    [
+       {
+          "path": ".",
+          "folder_exclude_patterns": ["tmp"]
+      }
+  ]
+}
