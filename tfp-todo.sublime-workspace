@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"respo",
+				"response_value"
+			],
+			[
+				"cre",
+				"createTaskHTML"
+			],
+			[
+				"update",
+				"update_attributes\t(tasks_controller.rb)"
+			],
+			[
 				"login",
 				"login_as"
 			],
@@ -123,6 +135,52 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "app/views/static_pages/index.html.erb",
+			"settings":
+			{
+				"buffer_size": 506,
+				"encoding": "UTF-8",
+				"line_ending": "Unix",
+				"name": "<section class=\"todoapp\">"
+			}
+		},
+		{
+			"file": "app/assets/stylesheets/tasks.scss",
+			"settings":
+			{
+				"buffer_size": 6415,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/assets/javascripts/tasks.js",
+			"settings":
+			{
+				"buffer_size": 2074,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/controllers/tasks_controller.rb",
+			"settings":
+			{
+				"buffer_size": 426,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "spec/controllers/tasks_controller_spec.rb",
+			"settings":
+			{
+				"buffer_size": 1474,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -198,6 +256,14 @@
 	],
 	"file_history":
 	[
+		"/home/enrico/tfp-todo/app/controllers/static_pages_controller.rb",
+		"/home/enrico/tfp-todo/config/routes.rb",
+		"/home/enrico/tfp-todo/Gemfile",
+		"/home/enrico/tfp-todo/spec/factories.rb",
+		"/home/enrico/tfp-todo/spec/helpers/tasks_helper_spec.rb",
+		"/home/enrico/tfp-todo/spec/rails_helper.rb",
+		"/home/enrico/tfp-grammable/grammable.sublime-project",
+		"/home/enrico/tfp-todo/tfp-todo.sublime-project",
 		"/home/enrico/advanced_js.html",
 		"/home/enrico/depot/app/controllers/users_controller.rb",
 		"/home/enrico/depot/app/models/user.rb",
@@ -293,7 +359,6 @@
 		"/home/enrico/tfp-grammable/app/views/grams/new.html.erb",
 		"/home/enrico/tfp-grammable/app/assets/stylesheets/application.scss",
 		"/home/enrico/tfp-grammable/Gemfile",
-		"/home/enrico/tfp-grammable/grammable.sublime-project",
 		"/home/enrico/.config/sublime-text-3/Packages/User/SyncSettings.sublime-settings",
 		"/home/enrico/tfp-grammable/app/models/comment.rb",
 		"/home/enrico/tfp-grammable/app/models/user.rb",
@@ -318,14 +383,7 @@
 		"/home/enrico/tmp/tfp-quiz-2/app/controllers/visitors_controller.rb",
 		"/home/enrico/tmp/tfp-quiz-2/config/routes.rb",
 		"/home/enrico/tmp/tfp-quiz-2/app/views/visitors/index.html.erb",
-		"/home/enrico/tfp-flixter/app/views/courses/show.html.erb",
-		"/media/sf_Projects/dog.rb",
-		"/home/enrico/dog.rb",
-		"/home/enrico/person.rb",
-		"/home/enrico/tmp/tfp-quiz-2/app/models/visitor.rb",
-		"/home/enrico/tmp/tfp-quiz-2/app/views/visitor_display/index.html.erb",
-		"/home/enrico/tmp/tfp-quiz-2/app/views/visitor_display/show.html.erb",
-		"/home/enrico/tmp/tfp-quiz-2/app/controllers/visitor_display_controller.rb"
+		"/home/enrico/tfp-flixter/app/views/courses/show.html.erb"
 	],
 	"find":
 	{
@@ -344,6 +402,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"check_pen",
 			"martin",
 			"create",
 			"def create",
@@ -408,8 +467,153 @@
 	"groups":
 	[
 		{
+			"selected": 2,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "app/views/static_pages/index.html.erb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 506,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								323,
+								323
+							]
+						],
+						"settings":
+						{
+							"auto_name": "<section class=\"todoapp\">",
+							"syntax": "Packages/Rails/HTML (Rails).sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/assets/stylesheets/tasks.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6415,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								6291,
+								6291
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 10994.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/assets/javascripts/tasks.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2074,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1060,
+								1060
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 558.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/controllers/tasks_controller.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 426,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								328,
+								328
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "spec/controllers/tasks_controller_spec.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1474,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								846,
+								846
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 558.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -461,6 +665,38 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"tasks.scss",
+				"app/assets/stylesheets/tasks.scss"
+			],
+			[
+				"index.htm",
+				"app/views/static_pages/index.html.erb"
+			],
+			[
+				"tasks_helper_s",
+				"spec/helpers/tasks_helper_spec.rb"
+			],
+			[
+				"tasks_c",
+				"spec/controllers/tasks_controller_spec.rb"
+			],
+			[
+				"rails_he",
+				"spec/rails_helper.rb"
+			],
+			[
+				"gemf",
+				"Gemfile"
+			],
+			[
+				"routes",
+				"config/routes.rb"
+			],
+			[
+				"contr",
+				"app/controllers/static_pages_controller.rb"
+			],
 			[
 				"users_co",
 				"app/controllers/users_controller.rb"
@@ -516,10 +752,6 @@
 			[
 				"sessions_cotn",
 				"test/controllers/sessions_controller_test.rb"
-			],
-			[
-				"routes",
-				"config/routes.rb"
 			],
 			[
 				"admin_c",
@@ -708,10 +940,6 @@
 			[
 				"gemfi",
 				"Gemfile"
-			],
-			[
-				"index.htm",
-				"app/views/store/index.html.erb"
 			],
 			[
 				"applicationscss",
@@ -946,24 +1174,8 @@
 				"spec/factories.rb"
 			],
 			[
-				"rails_he",
-				"spec/rails_helper.rb"
-			],
-			[
 				"carrier",
 				"config/initializers/carrierwave.rb"
-			],
-			[
-				"new.h",
-				"app/views/grams/new.html.erb"
-			],
-			[
-				"gram.",
-				"app/models/gram.rb"
-			],
-			[
-				"grams_con",
-				"spec/controllers/grams_controller_spec.rb"
 			]
 		],
 		"width": 0.0

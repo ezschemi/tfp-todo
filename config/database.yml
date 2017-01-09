@@ -83,5 +83,5 @@ test:
 production:
   <<: *default
   database: tfp-todo_production
-  #username: tfp-todo
-  #password: <%= ENV['TFP-TODO_DATABASE_PASSWORD'] %>
+  username: tfp-todo
+  password: <%= ENV['TFP-TODO_DATABASE_PASSWORD'] %>
